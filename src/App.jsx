@@ -123,7 +123,7 @@ export default function App() {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch("http://localhost:5000/api/adjust-tone", {
+      const res = await fetch("https://tonepicer-backend.onrender.com/api/adjust-tone", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
