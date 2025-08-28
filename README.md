@@ -1,12 +1,38 @@
-# React + Vite
+Frontend (React + Tailwind + Framer Motion)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Text Editor → Editable text area with live updates
 
-Currently, two official plugins are available:
+Tone Picker (2×2 matrix) → Adjusts tone along two axes:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Formal ↔ Casual
 
-## Expanding the ESLint configuration
+Concise ↔ Elaborate
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Undo / Redo → Tracks and reverts changes to text tone
+
+Reset Button → Restores original input
+
+LocalStorage Persistence → Saves text and history across refreshes
+
+Responsive UI → Clean layout with animations and visual feedback
+
+Error & Loading States → Spinner overlay + error banner
+
+🔹 Backend (Node.js + Express)
+
+Secure API proxy to Mistral AI
+
+Environment variables managed with .env (API key not exposed to frontend)
+
+Request validation & error handling
+
+CORS enabled for local dev
+
+Ready for caching or auth middleware if extended
+
+⚙️ Tech Stack
+
+Frontend: React, TailwindCSS, Framer Motion
+Backend: Node.js, Express, dotenv
+AI API: Mistral Small (mistral-small-latest)
+State Management: React Reducer (for undo/redo)
